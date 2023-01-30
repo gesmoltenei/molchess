@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>molChess</title>
+    <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/chessboard-1.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.js"></script>
+    <div id="topbar">
+    	<label id="logotext">molchess.org</label>
+    	<label class="toptext">PLAY</label>
+    	<label class="toptext">STATS</label>
+    	<label class="toptext">COMMUNITY</label>
+
+
+    </div>
+  </head>
+	  <div id="game">
+		  <div id="myBoard" style="width: 700px" class="board"></div>
+
+		  <div id="box" class="text">
+				<label>Status:</label>
+				<div id="status"></div>
+				<label>FEN:</label>
+				<div id="fen"></div>
+				<label>PGN:</label>
+				<div id="pgn"></div>
+				<div class="buttonContainer">
+					<button type="button" class="button" onclick="mcResign()">Resign</button>
+					<button type="button" class="button">Offer Draw</button>
+				</div>
+			</div>
+
+		  <script src="js/game.js"></script>
+	  </div>
+
+	  
+</html>
